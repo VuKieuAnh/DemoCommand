@@ -13,4 +13,8 @@ public class Account {
         System.out.println("Account [" + name + "] Closed\n");
     }
 
+    public void raise(){
+        System.out.println("Account [" + name + "] Raise\n");
+    }
+
 }

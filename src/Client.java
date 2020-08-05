@@ -4,9 +4,11 @@ public class Client {
 
         Command open = new OpenAccount(account);
         Command close = new CloseAccount(account);
-        BankApp bankApp = new BankApp(open, close);
+        Command raise = new RaisingAccount(account);
+        BankApp bankApp = new BankApp(open, close, raise);
 
         bankApp.clickOpenAccount();
         bankApp.clickCloseAccount();
+        bankApp.raiseCloseAccount();
     }
 }
